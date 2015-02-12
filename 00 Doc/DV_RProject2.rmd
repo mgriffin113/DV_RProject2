@@ -1,0 +1,46 @@
+---
+title: "DV_RProject2"
+author: "Michael Griffin, Jacob Rachiele, Chris Ramos"
+date: "February 11, 2015"
+output: html_document
+---
+
+* * *
+
+####Step 9
+
+```{r Building Data Frames for Orders Schema}
+
+# Create data frames for the orders schema.
+
+source("../01 Data/Create Data Frames.R")
+
+```
+####Step 10
+
+Display subset of the data frame
+
+```{r Displaying subset of data from step 9}
+
+# Display the data frames for the orders schema.
+
+source("../03 Visualizations/Display Data Frames.R")
+
+```
+####Step 11
+
+```{r 3 interesting data wrangling sets of operations }
+
+source("../02 Data Wrangling/Wrangled Sets.R")
+
+```
+
+####Step 12
+
+```{r Visualizations from wrangled data set}
+
+# Create visualizations from the wrangled data
+
+source("../03 Visualizations/Produce Plots.R")
+
+```
