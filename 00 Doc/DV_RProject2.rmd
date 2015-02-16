@@ -13,7 +13,7 @@ output: html_document
 
 # Create data frames for the orders schema.
 
-source("../01 Data/Create Data Frames.R")
+source("../01 Data/Create Data Frames.r")
 
 ```
 ####Step 10
@@ -31,7 +31,7 @@ source("../03 Visualizations/Display Data Frames.R")
 
 ```{r 3 interesting data wrangling sets of operations }
 
-source("../02 Data Wrangling/Wrangled Sets.R")
+source("../02 Data Wrangling/Wrangled Data.R")
 
 ```
 
