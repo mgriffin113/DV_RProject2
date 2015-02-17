@@ -1,5 +1,5 @@
-library("dplyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+require("dplyr")
 
-# Head of transportation dataset:
+# Display subset of data using dplyr tbl_df function to transform data frame for viewing.
 
 print(tbl_df(df1))

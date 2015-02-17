@@ -1,6 +1,6 @@
-library("dplyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+require("dplyr")
 
-# Head of the wrangled datasets:
+# dplyr tbl_df applied to the wrangled datasets:
 print(tbl_df(numOfTripsPerVehicle))
 
 print(tbl_df(avgDistanceToNextStop))

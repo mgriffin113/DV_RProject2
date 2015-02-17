@@ -9,9 +9,9 @@ output: html_document
 
 ####Step 9
 
-```{r Building Data Frames for Orders Schema}
+```{r Building Data Frames From Oracle Table}
 
-# Create data frames for the orders schema.
+# Create data frame from oracle bus data table.
 
 source("../01 Data/Create Data Frames.r")
 
@@ -22,7 +22,7 @@ Display subset of the data frame
 
 ```{r Displaying subset of data from step 9}
 
-# Display the data frames for the orders schema.
+# Display the data frame from the bus data table.
 
 source("../03 Visualizations/Display Data Frames.R")
 

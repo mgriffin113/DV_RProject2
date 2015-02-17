@@ -1,5 +1,5 @@
-library("dplyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
-library("tidyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+require("dplyr")
+require("tidyr")
 
 # Wrangle the data
 
