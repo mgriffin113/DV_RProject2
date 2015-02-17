@@ -1,5 +1,5 @@
 #produce plots from wrangled data sets
-require("ggplot2")
+library("ggplot2")
 
 numTrips <- ggplot(numOfTripsPerVehicle, aes(x=VEHICLE_ID, y=NUM_TRIPS)) + geom_bar(stat="identity")
 

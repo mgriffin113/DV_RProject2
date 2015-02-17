@@ -1,4 +1,4 @@
-require("dplyr")
+library("dplyr")
 
 # dplyr tbl_df applied to the wrangled datasets:
 print(tbl_df(numOfTripsPerVehicle))
