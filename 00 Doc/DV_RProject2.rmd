@@ -30,8 +30,13 @@ source("../03 Visualizations/Display Data Frames.R")
 ####Step 11
 
 ```{r 3 interesting data wrangling sets of operations }
+# Wrangle the dataset
 
 source("../02 Data Wrangling/Wrangled Data.R")
+
+# Show the tbl_df of the new dataframes
+
+source("../03 Visualizations/Display Wrangled Data.R")
 
 ```
 

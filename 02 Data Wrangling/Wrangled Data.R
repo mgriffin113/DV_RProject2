@@ -1,3 +1,6 @@
+library("dplyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("tidyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+
 # Wrangle the data
 
 # This dataset shows the number of trips each particular vehicle made
@@ -5,15 +8,17 @@
 numOfTripsPerVehicle<- 
   df1 %>%
   group_by(VEHICLE_ID) %>%
-  summarise(n())
+  summarise(NUM_TRIPS = n())
 
 # This dataset shows the average distance between stops that each vehicle has along each route it drives
 avgDistanceToNextStop<-
   df1 %>%
   group_by(INFERRED_ROUTE_ID, VEHICLE_ID) %>%
-  summarise(mean(NEXT_SCHEDULED_STOP_DISTANCE))
+  summarise(AVG_DIST = mean(NEXT_SCHEDULED_STOP_DISTANCE))
 
-df<-
+# This dataset finds the average time between each stop, and the average distance between each stop for each bus, then calculates average feet per second
+
+avgFeetPerSecond<-
   df1 %>%
   separate(TIME_RECEIVED,c("DATE_RECEIVED","HOUR_RECEIVED"),sep=" ") %>%
   filter(DATE_RECEIVED=="2014-08-02") %>%
