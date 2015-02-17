@@ -3,12 +3,11 @@ library("tidyr")
 
 # Wrangle the data
 
-# This dataset shows the number of trips each particular vehicle made
-# A trip is defined as the ride from one stop to the next
-numOfTripsPerVehicle<- 
+# This dataset shows the number of observations made for each vehicle
+numOfObservationsPerVehicle<- 
   bus_sample_data %>%
   group_by(VEHICLE_ID) %>%
-  summarise(NUM_TRIPS = n())
+  summarise(NUM_OBSERVATIONS = n())
 
 # This dataset shows the average distance between stops that each vehicle has along each route it drives
 avgDistanceToNextStop<-
